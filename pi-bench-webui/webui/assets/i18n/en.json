@@ -1,0 +1,15 @@
+{
+  "app.title": "Pi Bench WebUI",
+  "btn.run": "▶ Run Bench",
+  "label.autoscroll": "Auto-scroll to bottom",
+  "card.status": "Status",
+  "card.raw": "Raw Output",
+  "status.hint": "Tip: Click “Run Bench” to start; the bar fills when finished.",
+  "status.startTime": "Start Time",
+  "status.current": "Current Status",
+  "status.standby": "Idle",
+  "status.exec": "Running: ",
+  "status.done": "Done",
+  "status.error": "Connection error or closed",
+  "footer": "© Pi Bench • SSE live stream • No external CDN"
+}

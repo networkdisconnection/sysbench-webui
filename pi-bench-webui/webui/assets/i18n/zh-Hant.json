@@ -1,0 +1,15 @@
+{
+  "app.title": "Pi Bench WebUI",
+  "btn.run": "▶ 執行測試",
+  "label.autoscroll": "自動捲到底",
+  "card.status": "狀態",
+  "card.raw": "原始輸出（完整）",
+  "status.hint": "提示：按「執行測試」才會開始；完成後進度條會滿格。",
+  "status.startTime": "開始時間",
+  "status.current": "目前狀態",
+  "status.standby": "待命",
+  "status.exec": "執行：",
+  "status.done": "完成",
+  "status.error": "連線錯誤或中斷",
+  "footer": "© Pi Bench • SSE 即時串流 • 無外部 CDN"
+}

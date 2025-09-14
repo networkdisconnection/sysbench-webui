@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <title>Pi Bench WebUI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; connect-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'none'">
+  <link rel="stylesheet" href="/assets/app.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1 data-i18n="app.title">Pi Bench WebUI</h1>
+    <a id="runBtn" class="btn" href="#" data-i18n="btn.run"><span>▶</span> 執行測試</a>
+    <label class="chk"><input id="autoscroll" type="checkbox" checked><span data-i18n="label.autoscroll">自動捲到底</span></label>
+    <select id="lang" class="btn" aria-label="Language">
+      <option value="zh-Hant">繁體中文</option>
+      <option value="en">English</option>
+    </select>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2 data-i18n="card.status">狀態</h2>
+      <div class="section">
+        <div class="kv mb12">
+          <div class="key" data-i18n="status.startTime">開始時間</div><div id="start" class="val">—</div>
+          <div class="key" data-i18n="status.current">目前狀態</div><div id="status" class="val" data-i18n="status.standby">待命</div>
+        </div>
+        <div class="progress"><div id="bar" class="bar"></div></div>
+        <div class="spacer"></div>
+        <div class="muted" data-i18n="status.hint">提示：按「執行測試」才會開始；完成後進度條會滿格。</div>
+      </div>
+    </div>
+
+    <div id="cards" class="grid"></div>
+
+    <div class="card">
+      <h2 data-i18n="card.raw">原始輸出（完整）</h2>
+      <div class="section mono" id="fullLog"></div>
+    </div>
+  </main>
+
+  <footer data-i18n="footer">© Pi Bench • SSE 即時串流 • 無外部 CDN</footer>
+  <script src="/assets/app.js" defer></script>
+</body>
+</html>

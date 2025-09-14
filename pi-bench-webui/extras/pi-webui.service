@@ -1,0 +1,17 @@
+[Unit]
+Description=Pi Bench WebUI (python http.server --cgi 9091)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=YOUR_USER
+Group=YOUR_USER
+WorkingDirectory=/home/YOUR_USER/webui
+ExecStart=/usr/bin/python3 -m http.server --cgi 9091
+Restart=always
+RestartSec=2
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
