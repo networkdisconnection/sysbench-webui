@@ -10,10 +10,10 @@
 ## 功能（Features）
 
 - 🎨 現代深色 UI：玻璃卡片、柔和漸層、細緻分隔線  
-- 🖱️ 一鍵執行：使用者點「執行測試」才會啟動（不自動跑）  
+- 🖱️ 執行：使用者點「執行測試」才會啟動（不自動跑）  
 - 🔌 **Server-Sent Events (SSE)**：分段即時呈現（System / CPU & Memory / Disk / Network）  
-- 🐧 **Linux**：沿用你的測試精神（CPU/Memory/Disk + Network Info）  
-- 🪟 **Windows**：提供等價系統資訊（若 PATH 找到 `iperf3` 亦可使用）  
+- 🐧 **Linux**：測試資訊（CPU/Memory/Disk + Network Info）  
+- 🪟 **Windows**：提供系統資訊（若 PATH 找到 `iperf3` 亦可使用）  
 - 🌐 **i18n**：繁體中文 / English  
 - 🔒 無外部 CDN、同源 CSP、無 Cookie；可純內網運作  
 
